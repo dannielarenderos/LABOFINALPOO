@@ -10,76 +10,95 @@ package modelo;
  * @author LN710Q
  */
 public class Filtro {
+
     private int id;
-    private String codigo;
-    private String marca;
-    private int stock;
-    private boolean existencia;
+    private String carnet;
+    private String nombres;
+    private String apellidos;
+    private int edad;
+    private String universidad;
+    private boolean estado;
 
     public Filtro() {
     }
 
-    public Filtro(int id, String codigo, String marca, int stock, boolean existencia) {
+    public Filtro(int id, String carnet, String nombres, String apellidos, int edad, String universidad, boolean estado) {
         this.id = id;
-        this.codigo = codigo;
-        this.marca = marca;
-        this.stock = stock;
-        this.existencia = existencia;
+        this.carnet = carnet;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.edad = edad;
+        this.universidad = universidad;
+        this.estado = estado;
     }
-    
-    public Filtro(String codigo, String marca, int stock, boolean existencia) {
-        this.codigo = codigo;
-        this.marca = marca;
-        this.stock = stock;
-        this.existencia = existencia;
+
+    public Filtro(String carnet, String nombres, String apellidos, String universidad, boolean estado) {
+        this.carnet = carnet;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.universidad = universidad;
+        this.estado = estado;
     }
-    
-    public Filtro(String marca, int stock, boolean existencia) {
-        this.marca = marca;
-        this.stock = stock;
-        this.existencia = existencia;
+
+    public Filtro(String universidad, boolean estado) {
+        this.universidad = universidad;
+        this.estado = estado;
     }
 
     public int getId() {
         return id;
     }
 
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public int getStock() {
-        return stock;
-    }
-
-    public boolean getExistencia() {
-        return existencia;
-    }
-
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public String getUniversidad() {
+        return universidad;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setUniversidad(String universidad) {
+        this.universidad = universidad;
     }
 
-    public void setStock(int stock) {
-        this.stock = stock;
+    public String getCarnet() {
+        return carnet;
     }
 
-    public void setExistencia(boolean existencia) {
-        this.existencia = existencia;
+    public void setCarnet(String carnet) {
+        this.carnet = carnet;
     }
-    
-    
-    
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public boolean getEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
 }
