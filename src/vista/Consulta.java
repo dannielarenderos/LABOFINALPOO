@@ -137,10 +137,10 @@ public class Consulta extends JFrame {
         no.setBounds(210, 200, 50, ALTOC);
 
         buscar.setBounds(300, 10, ANCHOC, ALTOC);
-        insertar.setBounds(10, 210, ANCHOC, ALTOC);
-        actualizar.setBounds(150, 210, ANCHOC, ALTOC);
-        eliminar.setBounds(300, 210, ANCHOC, ALTOC);
-        limpiar.setBounds(450, 210, ANCHOC, ALTOC);
+        insertar.setBounds(10, 600, ANCHOC, ALTOC);
+        actualizar.setBounds(150, 600, ANCHOC, ALTOC);
+        eliminar.setBounds(300, 600, ANCHOC, ALTOC);
+        limpiar.setBounds(450, 600, ANCHOC, ALTOC);
         resultados = new JTable();
         table.setBounds(10, 250, 500, 200);
         table.add(new JScrollPane(resultados));
